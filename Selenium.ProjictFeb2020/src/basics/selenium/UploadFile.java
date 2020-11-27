@@ -1,4 +1,4 @@
-package basics.selenium;
+]\package basics.selenium;
 
 import java.util.concurrent.TimeUnit;
 
@@ -11,7 +11,7 @@ public class UploadFile {
 
 	public static void main(String[] args) {
 		
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new ChromeDriver();---okkj-[-l>/.]
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
@@ -23,9 +23,12 @@ public class UploadFile {
 		WebElement uploadFile = driver.findElement(By.xpath("//input[@type='file']"));
 		String filePath = "C:\\Users\\shirz\\OneDrive\\Desktop\\marsopic.jpg";
 		
-		//we have to give the extention of documetn at the end of our filepath
+		//we have to give the extention of documetn at the end of our filepath like docx or jpg also 
+		// befoer that we should give the name of file like in above i give marso pic
 	//	 upload the file
 		uploadFile.sendKeys(filePath);
 	}
 
 }
+
+-
